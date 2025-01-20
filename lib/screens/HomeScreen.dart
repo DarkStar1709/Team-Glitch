@@ -52,8 +52,8 @@ class HomeScreen extends StatefulWidget {
       'title': 'Diet Plan',
       'imagePath': 'assets/images/diet.webp',
       'icon': Icons.access_time,
-      'onTap': () {
-        print('Card 3 tapped');
+      'onTap': (BuildContext context) {
+        Navigator.pushNamed(context, '/diet');
       },
     },
     {

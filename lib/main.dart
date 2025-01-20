@@ -7,6 +7,7 @@ import 'package:peacify/blocs/auth%20block/auth_state.dart';
 import 'package:peacify/blocs/chat%20bloc/chat_bloc.dart';
 // ignore: unused_import
 import 'package:peacify/screens/ChatScreen.dart';
+import 'package:peacify/screens/DietScreen.dart';
 import 'package:peacify/screens/DoctorListScreen.dart';
 import 'package:peacify/screens/HelplineScreen.dart';
 import 'package:peacify/screens/MusicScreen.dart';
@@ -47,7 +48,7 @@ class MainApp extends StatelessWidget {
         '/': (context) => BlocBuilder<AuthBloc, AuthState>(
               builder: (context, state) {
                 if (state is Authenticated) {
-                  return HomeScreen();
+                  return OnboardingScreen();
                 } else {
                   return HomeScreen();
                 }
@@ -66,6 +67,7 @@ class MainApp extends StatelessWidget {
             ),
         '/doc': (context) => DoctorListScreen(),
         '/stress': (context) => Stressscreen(),
+        '/diet': (context) => DietScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
