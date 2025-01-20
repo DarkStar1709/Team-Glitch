@@ -21,7 +21,7 @@ class HomeScreen extends StatefulWidget {
       'imagePath': 'assets/images/mentalhealth.webp',
       'icon': Icons.error_outline,
       'onTap': (BuildContext context) {
-        Navigator.pushNamed(context, '/question');
+        Navigator.pushNamed(context, '/stress');
       },
     },
     {

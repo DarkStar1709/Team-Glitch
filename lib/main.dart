@@ -16,6 +16,7 @@ import 'package:peacify/screens/QuestionScreen.dart';
 import 'package:peacify/screens/SignupScreen.dart';
 import 'package:peacify/screens/HomeScreen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:peacify/screens/Stress.dart';
 import 'blocs/auth block/auth_bloc.dart'; // Import AuthBloc
 
 void main() async {
@@ -64,6 +65,7 @@ class MainApp extends StatelessWidget {
               child: Chatscreen(),
             ),
         '/doc': (context) => DoctorListScreen(),
+        '/stress': (context) => Stressscreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
