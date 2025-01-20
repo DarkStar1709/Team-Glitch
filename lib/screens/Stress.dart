@@ -71,7 +71,7 @@ class _StressscreenState extends State<Stressscreen> {
         backgroundColor: Colors.purple.shade300,
         centerTitle: true,
         title: const Text(
-          'Health Survey',
+          'Stress Survey',
           style: TextStyle(color: Colors.black, fontSize: 30),
         ),
       ),
