@@ -48,9 +48,9 @@ class MainApp extends StatelessWidget {
         '/': (context) => BlocBuilder<AuthBloc, AuthState>(
               builder: (context, state) {
                 if (state is Authenticated) {
-                  return OnboardingScreen();
-                } else {
                   return HomeScreen();
+                } else {
+                  return OnboardingScreen();
                 }
               },
             ),
